@@ -1,3 +1,3 @@
 name = 'Debadarshi Omkar'
-email = 'debadarshi.omkar08@gmail.com'
-print(f"Name: {name} \nemail: {email}")
+address = 'village, post, dist, pin'
+print(f"Name: {name} \nAddress: {address}")
