@@ -5,4 +5,4 @@ for i in range(100, 1000) :
         count = 0
     if i % 5 == 0 or i % 6 == 0 :
         print(i, end = ' ')
-        count = count + 1
+        count += 1

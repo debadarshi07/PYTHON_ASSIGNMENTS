@@ -21,4 +21,3 @@ while True :
                     print("Error! Division by zero is not allowed.")
     else :
         print("Enter a valid operator")
-
