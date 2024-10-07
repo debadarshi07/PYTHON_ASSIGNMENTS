@@ -27,3 +27,22 @@
 #         numString += " + "
 
 # print(numString," = ", sum)
+
+# Bitwise operator
+print(f"2 & 5 : {2 & 5}")
+print(f"2 | 5 : {2 | 5}")
+
+# # Output test
+# def fun(a = 0 , b = 1):
+#     return a ** b + b ** a
+# print(f"fun(2, a = 3): {fun(2, a = 3)}") # Error
+# print(f"fun(b = 3, a = 2): {fun(b = 3, a = 2)}") # 17
+# print(f"fun(): {fun()}") # 1
+# print(f"fun(1,2): {fun(1,2)}") # 3
+
+# # Output test
+# message = 'Hello Gita'
+# print(message[-2:6:-1])
+# print(message[8:0])
+# print(message[len(message):-1:-1])
+# print(message[5:-9:-1])
