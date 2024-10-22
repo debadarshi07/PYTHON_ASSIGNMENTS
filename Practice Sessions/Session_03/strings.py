@@ -1,6 +1,13 @@
 name = 'Debadarshi Omkar'
 print('Full name:', name)
 
+print(name[0], name[1], name[2]) # chracters of python string can be accessed like elements of list.
+
+for ch in name:
+    print(ch, end = ' ')
+
+print()
+
 first_name = name[0 : 10]
 print('First name:', first_name)
 
