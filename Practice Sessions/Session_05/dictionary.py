@@ -10,6 +10,8 @@ student_1 = {
 }
 
 # dictionary methods
+# len()
+print('No. of key-value pairs inside dictionary:', len(student_1), '\n')
 # keys(), values() and items()
 print('keys:', student_1.keys(), '\n')
 print('values:', student_1.values(), '\n')
