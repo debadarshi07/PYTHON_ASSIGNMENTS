@@ -29,8 +29,9 @@
 # print(numString," = ", sum)
 
 # Bitwise operator
-print(f"2 & 5 : {2 & 5}")
-print(f"2 | 5 : {2 | 5}")
+# print(f"2 & 5 : {2 & 5}")
+# print(f"2 | 5 : {2 | 5}")
+# print()
 
 # # Output test
 # def fun(a = 0 , b = 1):
@@ -39,6 +40,7 @@ print(f"2 | 5 : {2 | 5}")
 # print(f"fun(b = 3, a = 2): {fun(b = 3, a = 2)}") # 17
 # print(f"fun(): {fun()}") # 1
 # print(f"fun(1,2): {fun(1,2)}") # 3
+# print()
 
 # # Output test
 # message = 'Hello Gita'
@@ -46,11 +48,16 @@ print(f"2 | 5 : {2 | 5}")
 # print(message[8:0])
 # print(message[len(message):-1:-1])
 # print(message[5:-9:-1])
+# print()
 
 # print('a' + 3)
 # print(4 + 'b')
 # print(4 + 3 + 'b')
-print("str(5) + 'b':", str(5) + 'b')
+# print("str(5) + 'b':", str(5) + 'b')
 # print("int('b')", int('b'))
-print("int('10'):", int('10'))
-print('ord(b):', ord('b'))
+# print("int('10'):", int('10'))
+# print('ord(b):', ord('b'))
+
+# tup = ()  # empty tuple
+# print('type(tup):', type(tup))
+# print('tup:', tup)
