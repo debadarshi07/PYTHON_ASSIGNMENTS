@@ -24,7 +24,8 @@ def employee_report(employees):
 
 
 employees = []
-for i in range(1, 4):
+total_employees = 3
+for i in range(1, total_employees + 1):
     print(f"\nEnter the details for Employee{i}.")
     emp_name = input(f"Name: ")
     hourly_rate = float(input(f"Hourly rate: "))
