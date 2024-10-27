@@ -6,7 +6,10 @@ from Question_3 import gross_salary
 from Question_4 import salary_bracket
 
 def employee_report(employees):
+
     print("\n" + "+" + "-" * 120 + "+")
+    print("|" + "Employee Salary Report".center(120, " ") + "|\n" + "+" + "-"*120 + "+")
+
     print(f"| {'Name':<25} {'Basic Salary(Rs.)':<25} {'Gross Salary(Rs.)':<25} {'Tax Amount(Rs.)':<25} {'Salary Bracket'} |")
     print("+" + "-" * 120 + "+")
 
@@ -21,7 +24,7 @@ def employee_report(employees):
 
 
 employees = []
-for i in range(1,4):
+for i in range(1, 4):
     print(f"\nEnter the details for Employee{i}.")
     emp_name = input(f"Name: ")
     hourly_rate = float(input(f"Hourly rate: "))
