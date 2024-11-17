@@ -1,9 +1,7 @@
-import sys
-
-while True :
+while True:
     operator = input("Enter the operator(+ , - , * , /) or 'exit' to stop: ")
-    if operator == 'exit' :
-        sys.exit()
+    if operator == 'exit':
+        exit()
     if operator in '+-*/':
         num1 = int(input("Enter first number: "))
         num2 = int(input("Enter second number: "))
@@ -17,7 +15,7 @@ while True :
             case '/':
                 if num2 != 0:
                     print(f"{num1} / {num2} = {num1 / num2}")
-                else :
+                else:
                     print("Error! Division by zero is not allowed.")
-    else :
-        print("Enter a valid operator")
+    else:
+        print("Invalid operator. Try again.")
