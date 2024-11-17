@@ -1,6 +1,5 @@
-from random import randrange as rr
+from random import random as r, randrange as rr
 from matplotlib import pyplot as plt
-from random import random as r
 
 # simulation of data
 rolls = [rr(1, 7) for _ in range(60000)]
@@ -16,7 +15,6 @@ unique_values = sorted(unique_values)
 
 # find the frequency of each unique values in rolls -- y axis entries
 frequencies = [rolls.count(value) for value in unique_values]
-print(frequencies)
 
 # Create bargraph
 title = f"Rolling a fair six-sided die {len(rolls)} times"
