@@ -1,11 +1,12 @@
 def can_form_palindrome(str_):
     list_of_chars = list(ch.lower() for ch in str_ if ch.isalnum())
+    set_of_chars = set(ch.lower() for ch in str_ if ch.isalnum())
     count = 0
-    for ch in str_:
+    for ch in set_of_chars:
         if list_of_chars.count(ch) % 2 != 0:
             count += 1
         if count > 1:
-            return False   
+            return False
     return True
 
 
