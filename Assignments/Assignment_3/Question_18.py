@@ -6,7 +6,7 @@ def are_anagrams(str1, str2):
         return False
 
     char_count = {}
-    
+
     for char in str1:
         char_count[char] = char_count.get(char, 0) + 1
 
@@ -19,7 +19,7 @@ def are_anagrams(str1, str2):
     for count in char_count.values():
         if count != 0:
             return False
-        
+
     return True
 
 str1, str2 = input("Enter first string: "), input("Enter second string: ")

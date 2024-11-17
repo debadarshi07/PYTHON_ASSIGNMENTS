@@ -10,6 +10,6 @@ def nth_fibonacci(n):
         for _ in range(2, n):
             first, second = second, first + second
         return second
-        
+
 n = int(input("Enter n: "))
 print(nth_fibonacci(n))
