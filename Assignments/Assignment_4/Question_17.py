@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt as sqrt
 
 def compute_standard_deviation(numbers):
     n = len(numbers)
