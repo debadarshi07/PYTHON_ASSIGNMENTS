@@ -33,7 +33,7 @@ def main():
         print("3. Insert an element at a specific index")
         print("4. Delete an element at a specific index")
         print("5. Exit")
-        
+
         choice = int(input("Enter your choice: "))
         
         if choice == 1:
