@@ -8,4 +8,3 @@ element = 3
 
 remove_occurrences(_list, element)
 print(f"Modified list: {_list}")
-print(len(_list))
