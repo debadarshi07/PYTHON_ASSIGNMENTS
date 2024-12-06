@@ -18,7 +18,7 @@ tlds['Sweden'] = 'sw'
 tlds['Sweden'] = 'se'
 
 # f) Use dictionary comprehension to reverse the keys and values.
-reversed_tlds = {v: k for k, v in tlds.items()}
+reversed_tlds = {value: key for key, value in tlds.items()}
 
 # Displaying results
 print("\n(d) Dictionary after adding Sweden with incorrect TLD and updating to correct TLD:")

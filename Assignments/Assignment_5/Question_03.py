@@ -10,7 +10,6 @@ def get_user_input_dict():
     return dict_
 
 def sum_of_values(dict_):
-    print(tuple(dict_.values()))
     return sum(dict_.values())
 
 dict_ = get_user_input_dict()
