@@ -39,29 +39,29 @@ def matrix_multiply(A, B):
 
 def calculate_weights(X, y):
     X_bias = [[1] + list(x) for x in X]
-    
+
     Xt = transpose(X_bias)
     XtX = matrix_multiply(Xt, X_bias)
     XtX_inv = inverse(XtX)
     XtY = matrix_multiply(Xt, [[val] for val in y])
-    
+
     return matrix_multiply(XtX_inv, XtY)
 
 def main():
-    
+
     n = int(input("Enter the number of car records: "))
-    
+
     ages = []
     mileages = []
     prices = []
 
     for i in range(n):
         price = float(input(f"Enter the price of car {i + 1} (in units of 10k dollars): "))
-        
+
         age = float(input(f"Enter the age of car {i + 1} (in years): "))
-        
+
         mileage = float(input(f"Enter the mileage of car {i + 1} (in thousands of miles): "))
-        
+
         ages.append(age)
         mileages.append(mileage)
         prices.append(price)
@@ -74,7 +74,7 @@ def main():
 
     new_age = float(input("Enter the age of the car you want to predict the price for (in years): "))
     new_mileage = float(input("Enter the mileage of the car you want to predict the price for (in thousands of miles): "))
-    
+
     new_X = [1, new_age, new_mileage] 
     predicted_price = dot_product(new_X, [w[0] for w in weights]) 
 
