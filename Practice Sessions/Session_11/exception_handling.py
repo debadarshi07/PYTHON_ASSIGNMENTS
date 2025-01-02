@@ -11,6 +11,7 @@ except:
 
 print()
 
+# try and except with else
 try:
     print("Hello")
 except:
@@ -20,16 +21,18 @@ else:
 
 print()
 
+# try and except with finally
 try:
     x = int(input("Enter a number: "))
     print(x)
 except ValueError:
     print("Error: ", sys.exc_info()[1])
-finally:
+finally:    # No matter whether error exists or not but this block will always be invoked at the end
     print("User has entered something.")
 
 print()
 
+# Nested try except
 try:
     file = open("file1.txt")
     try:
