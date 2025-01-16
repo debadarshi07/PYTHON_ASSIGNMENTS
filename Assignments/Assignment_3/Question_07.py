@@ -1,7 +1,5 @@
 def is_vowel(character):
-    if character in 'aeiouAEIOU':
-        return True
-    return False
+    return character in 'aeiouAEIOU'
 
 character = input("Enter a character: ")
 if is_vowel(character):

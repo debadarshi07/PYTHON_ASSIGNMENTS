@@ -16,6 +16,6 @@ def convert_to_text(num):
     for ch in str_num:
         text_num += digit_text[int(ch)] + " "
     return text_num
-    
+
 num = int(input("Enter a number: "))
 print(f"{num} --> {convert_to_text(num)}")
