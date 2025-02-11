@@ -31,7 +31,7 @@ class Time:
 
         return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d} {period}"
 
-# Example usage
+
 time_input = input("Enter time in HH:MM:SS format (24-hour): ")
 time_obj = Time(time_input)
 
