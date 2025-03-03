@@ -3,7 +3,7 @@ import doctest
 def add(a, b):
     """
     Returns the sum of two numbers.
-    
+
     >>> add(2, 3)
     5
     >>> add(-1, 1)
@@ -13,6 +13,7 @@ def add(a, b):
     >>> add(10, 20)
     30
     """
+
     return a + b
 
 
