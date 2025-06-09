@@ -1,0 +1,26 @@
+import pandas as pd
+df = pd.DataFrame()
+df['Sepal_Length'] = pd.Series([5.1, 4.9, 4.6, 4.7, 7.0, 6.4, 6.9, 6.3, 7.1, 6.3])
+df['Sepal_Width'] = pd.Series([3.5, 3.0, 3.1, 3.2, 3.2, 3.2, 3.1, 3.3, 3.0, 2.9])
+df['Petal_Length'] = pd.Series([1.4, 1.4, 1.5, 1.3, 4.5, 4.5, 4.9, 6.0, 5.9, 5.6])
+df['Petal_Width'] = pd.Series([0.2, 0.2, 0.2, 0.2, 1.5, 1.5, 1.5, 2.5, 2.1, 1.8])
+df['Class'] = pd.Series(['setosa', 'setosa', 'setosa', 'setosa', 'versicolor', 'versicolor', 'versicolor', 'virginica', 'virginica', 'virginica'])
+df.to_csv('iris_subset.csv', index=False)
+data = pd.read_csv('iris_subset.csv')
+print(df['Sepal_Length'].std())
+print(df['Sepal_Width'].std())
+print(df['Petal_Length'].std())
+print(df['Petal_Width'].std())
+df.plot.scatter('Sepal_Length', 'Sepal_Width')
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df['Class'] = le.fit_transform(df['Class'])
+print(df)
+X = df.drop('Class', axis=1)
+y = df['Class']
+knn = KNeighborsClassifier(n_neighbors=3)
+knn.fit(X,y)
+predict = knn.predict([[6.3, 2.8, 5.1, 1.5]])
+predicted_label = le.inverse_transform(predict)
+print(predicted_label[0])
